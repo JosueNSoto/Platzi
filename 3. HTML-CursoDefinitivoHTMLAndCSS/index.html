@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/mainCSS.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav_item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="main-nav_item">
+                    <a href="./layout.html">Cursos</a>
+                </li>
+                <li class="main-nav_item">
+                    <a href="#">Instrucciones</a>
+                </li>
+                <li class="main-nav_item">
+                    <a href="#">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Lista de compras</h1>
+    </header>
+    <main>
+        <section id="lista_de_compras">
+            <ul>
+                <li>
+                    <h2>Carnes</h2>
+                </li>
+                <ol>
+                    <li>
+                        <a target="_blank"
+                            href="https://www.google.com/search?q=recetas+con+carne+roja&rlz=1C1CHBF_esMX1049MX1049&oq=recetas+con+carne+roja&aqs=chrome.0.0i512l10.4280j0j7&sourceid=chrome&ie=UTF-8">Carne
+                            roja
+                        </a>
+                        <figure>
+                            <img src="./assets/images/carneRoja.jpg" alt="" width="75px">
+                            <!-- <figcaption>Es una imagen de carne roja para la dieta</figcaption> -->
+                            <!-- Esta última etiqueta de <figcaption></figcaption>, sirve para dejar una nota de pie en la imagen -->
+                        </figure>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.google.com/search?q=recetas+con+jam%C3%B3n&">Jamón
+                        </a>
+                        <figure>
+                            <img src="./assets/images/jamon.jpg" alt="" width="75px">
+                        </figure>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.google.com/search?q=recetas+con+pollo">Pollo
+                        </a>
+                        <figure>
+                            <img src="./assets/images/pollo.jpg" alt="" width="75px">
+                        </figure>
+                    </li>
+                </ol>
+            </ul>
+            <ul>
+                <li>
+                    <h2>Frutas</h2>
+                </li>
+                <ol>
+                    <li>
+                        <a target="_blank" href="https://www.google.com/search?q=recetas+con+manzana">Manzana
+                        </a>
+                        <figure>
+                            <img src="./assets/images/manzanas.jpg" alt="" width="75px">
+                        </figure>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.google.com/search?q=recetas+con+Naranja">Naranja
+                        </a>
+                        <figure>
+                            <img src="./assets/images/naranja.jpg" alt="" width="75px">
+                        </figure>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.google.com/search?q=recetas+con+Pi%C3%B1a">Piña
+                        </a>
+                        <figure>
+                            <img src="./assets/images/pina.jpg" alt="" width="75px">
+                        </figure>
+                    </li>
+                </ol>
+            </ul>
+
+            <ul>
+                <li>
+                    <h2>Verduras</h2>
+                </li>
+                <ol>
+                    <li>
+                        <a target="_blank" href="https://www.google.com/search?q=recetas+con+Zanahoria">Zanahoria
+                        </a>
+                        <figure>
+                            <img src="./assets/images/zanahorias.jpg" alt="" width="75px">
+                        </figure>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.google.com/search?q=recetas+con+Br%C3%B3coli">Brócoli
+                        </a>
+                        <figure>
+                            <img src="./assets/images/brocoli.jpg" alt="" width="75px">
+                        </figure>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.google.com/search?q=recetas+con+Espinaca">Espinaca
+                        </a>
+                        <figure>
+                            <img src="./assets/images/espinacas.jpg" alt="" width="75px">
+                        </figure>
+                        <figcaption></figcaption>
+                    </li>
+                </ol>
+            </ul>
+        </section>
+        <br>
+        <section>
+            <form action="">
+                <label for="hora">
+                    <span>Hora</span>
+                    <input type="time" id="hora" name="hora">
+                </label>
+                <label for="dia">
+                    <span>Día</span>
+                    <input type="date" id="dia" name="dia">
+                </label>
+                <label for="semana">
+                    <span>Semana</span>
+                    <input type="week" id="semana" name="semana">
+                </label>
+                <label for="mes">
+                    <span>Mes</span>
+                    <input type="month" id="mes" name="mes">
+                </label>
+                <input type="submit">
+            </form>
+        </section>
+        <br>
+        <section>
+            <form action="">
+                <label for="calendario">
+                    <span>Calendario</span>
+                    <input type="datetime-local" id="calendario" name="calendario">
+                </label>
+            </form>
+        </section>
+        <br>
+        <section>
+            <h2>Formulario</h2>
+            <!-- nombre, correo, país y CP -->
+            <form action="">
+                <label for="nombre">
+                    <span>Nombre</span>
+                    <input type="text" name="nombre" id="nombre" required autocomplete="name">
+                </label>
+                <label for="correo">
+                    <span>Correo</span>
+                    <input type="email" name="correo" id="correo" required autocomplete="email">
+                </label>
+                <label for="pais">
+                    <span>Pais</span>
+                    <input type="text" name="pais" id="pais" required autocomplete="country-name">
+                </label>
+                <label for="cp">
+                    <span>Código Postal</span>
+                    <input type="number" name="cp" id="cp" required autocomplete="postal-code">
+                </label>
+                <input type="submit">
+            </form>
+        </section>
+        <br>
+        <section>
+            <h2>Botón para seleccionar</h2>
+            <select name="cursos" id="">
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML5">HTML5</option>
+                <option value="CSS3">CSS3</option>
+                <option value="Web Standar">Web Standars</option>
+            </select>
+            <input list="cursos">
+            <datalist id="cursos">
+                <option value="JavaScript"></option>
+                <option value="HTML5"></option>
+                <option value="CSS3"></option>
+                <option value="Web Standar"></option>
+            </datalist>
+        </section>
+        <div class="reto37">
+            <div class="red_box">
+                <p>Texto Ejemplo</p>
+            </div>
+            <section class="gray_box">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum
+            </section>
+        <div/>
+    </main>
+</body>
+
+</html>

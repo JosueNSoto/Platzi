@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+body{
+    background-color: wheat;
+    font-family: 'Raleway', sans-serif;
+}
+.main-nav{
+    margin-top: 2.5rem;
+    list-style: none;
+    padding-left: 0;
+    /* background-color: antiquewhite; */
+}
+.main-nav_item{
+    color: red;
+    display: inline-block
+}
+.main-nav_item a{
+    color:darkcyan;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+.main-nav_item a:hover{
+    color: burlywood;
+}
+.main-nav_item a:active{
+    color: red;
+}
+.main-nav_item a::after{
+    content: " | ";
+}
+h1{
+    font-size: 9rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#lista_de_compras{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(230, 209, 171);
+    border-radius: 25px;
+    width: 170.0rem;
+    align-items: center;
+
+}
+h2{
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+ul{
+    font-size: 2.5rem;
+}
+ul a{
+    text-decoration: none;
+    font-weight: bold;
+    color: cadetblue;
+}
+figcaption{
+    color: darkolivegreen;
+}
+img{
+    width: 10.0rem;
+    height: auto;
+    border-radius: 20px;
+}
+.reto37{
+    margin-top: 50px;
+}
+.gray_box{
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    background-color: gainsboro;
+    display: inline-block;
+    min-width: 25rem;
+    max-width: 50rem;
+    min-height: 8.5rem;
+    margin-bottom: 75px;
+}
+.red_box{
+    background-color: red;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 43%;
+    top: 0.5rem;
+}

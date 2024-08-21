@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,100&display=swap');
+body{
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    background-color: #2f3e46;
+}
+.titulo {
+    /*Para las clases es un .titulo y para ID es #titulo*/
+    color: #cad2c5;
+    width: 250px;
+    height: 50px;
+    background-color: #354f52;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon:hover {
+    cursor: pointer;
+}
+
+.subtitulo {
+    color: #84a98c;
+    margin:0px;
+    margin-bottom: 10px;
+}
+#seleccionar-ataque {
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    background-color: #faf3dd;
+    border-radius: 50px;
+    height: 35px;
+    width: 150px;
+    border: 2px solid;   
+    color: #2f3e46;
+    font-family: 'Raleway', sans-serif;
+}
+
+.boton-de-ataque:hover{
+    background-color: #2f3e46;
+    color: #faf3dd;
+}
+
+#mensajes {
+    color: azure;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#seleccionar-opciones, .skillSelection{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #354f52;
+    border-radius: 10px;
+    width: 700px;
+    padding: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.tarjeta-de-mokepon{
+    width: 200px;
+    height: 160px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #84a98c;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: #cad2c5;
+}
+
+.tarjeta-de-mokepon img{
+    width: 100px;
+}
+
+#boton-mascota{
+    background-color: #faf3dd;
+    border-radius: 50px;
+    height: 35px;
+    width: 150px;
+    margin-top: 25px;
+    border: 2px solid;
+    color: #2f3e46;
+    font-family: 'Raleway', sans-serif;
+}
+
+#boton-reiniciar{
+    background-color: #2f3e46;
+    border-radius: 50px;
+    height: 35px;
+    width: 150px;
+    border: 2px solid;
+    color: #faf3dd;
+    font-family: 'Raleway', sans-serif;
+}
+
+#boton-reiniciar:hover{
+    background-color: #faf3dd;
+    color: #2f3e46;
+}
+
+#mensajes{
+    background-color: #84a98c;
+    border-radius: 20px;
+    width: 200px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 150px 150px;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 360px){
+    #seleccionar-opciones, .skillSelection{
+        flex-direction: column;
+    }
+}
